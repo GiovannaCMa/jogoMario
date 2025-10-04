@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Press Start 2P", monospace;
+  background: #87ceeb;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+#overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px 10px;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+/* Tela de Game Over */
+#gameOverScreen {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+#gameOverScreen img {
+  width: 250px;
+  image-rendering: pixelated;
+}
+
+#finalScore {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+
+#recordScore {
+  color: #0083C8; /* dourado */
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#gameOverMessage {
+  color: #FF0000;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 4px 4px 4px #000;
+  max-width: 400px; /* ajuste o valor até ficar bom */
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word; /* garante que o texto quebre corretamente */
+  text-align: center; /* centraliza o texto */
+}
+
+#start-game {
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0083C8; /* azul */
+  border: 4px solid #0083C8;
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+  image-rendering: pixelated;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jão Run</title>
+    <link rel="stylesheet" href="./css/game.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="musics/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <canvas id="gameCanvas"></canvas>
+    <div id="overlay">SCORE: 0 | RECORD: 0</div>
+
+    <!-- Tela de Game Over -->
+    <div id="gameOverScreen">
+      <img id="gameOverImg" src="img/gameover.png" alt="Game Over" />
+      <p id="finalScore">SCORE: 0</p>
+      <p id="recordScore">RECORD: 0</p>
+
+      <p id="gameOverMessage">Mensagem motivacional aqui!</p>
+      <button id="start-game">RESERT</button>
+    </div>
+  </body>
+</html>
